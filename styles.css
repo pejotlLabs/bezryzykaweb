@@ -797,29 +797,17 @@ nav.scrolled {
 
 /* ── FOOTER ───────────────────────────────────────────────── */
 footer {
-  padding: 48px 0 0;
+  padding: 28px 0;
   border-top: 1px solid var(--border);
   background: var(--bg-surface);
 }
 
-.footer-contact-row {
+.footer-inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 32px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--border);
-}
-
-.footer-contact-block {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer-contact-right {
-  align-items: flex-end;
+  gap: 16px;
 }
 
 .footer-logo {
@@ -827,6 +815,7 @@ footer {
   align-items: center;
   gap: 10px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .footer-logo img {
@@ -841,49 +830,28 @@ footer {
   color: var(--text-sub);
 }
 
-.footer-tagline {
-  font-size: 13px;
-  color: var(--text-muted);
-  max-width: 280px;
-  line-height: 1.6;
-}
-
-.footer-contact-label {
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: var(--text-muted);
-}
-
-.footer-contact-org {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.footer-contact-email {
-  font-size: 14px;
-  color: var(--red);
-  text-decoration: none;
-  font-weight: 500;
-  transition: var(--transition);
-}
-
-.footer-contact-email:hover {
-  color: var(--text-primary);
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  padding: 20px 0;
+.footer-copy-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
 }
 
 .footer-copy {
   font-size: 12px;
   color: var(--text-muted);
-  line-height: 1.7;
-  text-align: center;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.footer-copy-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-copy-link:hover {
+  color: var(--text-sub);
 }
 
 .footer-links {
